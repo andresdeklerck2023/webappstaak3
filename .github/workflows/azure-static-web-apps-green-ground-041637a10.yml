@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     environment : develop
     env:
-      BACKGROUND_COLOR: ${{ secrets.BACKGROUND_COLOR }}
+      REACT_APP_BACKGROUND_COLOR: ${{ secrets.BACKGROUND_COLOR }}
     steps:
       - uses: actions/checkout@v3
         with:
