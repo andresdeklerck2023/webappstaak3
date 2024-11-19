@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 const backgroundColor = process.env.REACT_APP_BG_COLOR;
