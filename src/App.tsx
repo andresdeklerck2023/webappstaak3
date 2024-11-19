@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const backgroundColor = process.env.REACT_APP_BACKGROUND_COLOR;
+
+const appStyle = {
+    backgroundColor,
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+};
+
+const App = () => (
+    <div style={appStyle}>
+        <h1>Hello, this is the production webpage!</h1>
     </div>
-  );
-}
+);
 
 export default App;
