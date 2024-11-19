@@ -12,7 +12,7 @@ const appStyle = {
 
 const App = () => (
     <div style={appStyle}>
-        <h1>Hello, Azure Static Web Apps!</h1>
+        <h1>Hello, This is the develop webpage!</h1>
     </div>
 );
 
