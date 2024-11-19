@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div style={appStyle} className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -22,5 +22,17 @@ function App() {
     </div>
   );
 }
+
+const backgroundColor = process.env.REACT_APP_BG_COLOR;
+
+const appStyle = {
+    backgroundColor,
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+};
+
+
 
 export default App;
