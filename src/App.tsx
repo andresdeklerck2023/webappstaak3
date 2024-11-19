@@ -23,7 +23,7 @@ function App() {
   );
 }
 
-const backgroundColor = process.env.REACT_APP_BG_COLOR;
+const backgroundColor = process.env.BACKGROUND_COLOR;
 
 const appStyle = {
     backgroundColor,
